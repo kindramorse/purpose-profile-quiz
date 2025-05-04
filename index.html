@@ -49,7 +49,7 @@
 </head>
 <body>
   <div class="branding-banner">
-    <img src="https://raw.githubusercontent.com/tcurtis88/purpose-profile-quiz/main/Aligned_and_Ascending_Kindra_Morse_Banner.png" alt="Aligned and Ascending - Kindra Morse Banner">
+    <img src="aligned-and-ascending-banner.png" alt="Aligned and Ascending Banner with Kindra Morse">
   </div>
 
   <h1>Discover Your Purpose Profile</h1>
@@ -109,11 +109,65 @@
     const quizForm = document.getElementById('quizForm');
     const resultBox = document.getElementById('resultBox');
     const resultMap = {
-      A: `You’re <strong>The Visionary</strong>. You lead with intuition and insight. You’re here to cast vision and move freely with your creative flow. <br/><br/><a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
-      B: `You’re <strong>The Builder</strong>. You thrive with consistency, structure, and getting things done. You’re the backbone of reliable growth. <br/><br/><a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
-      C: `You’re <strong>The Refiner</strong>. You shine behind the scenes—improving, optimizing, and clarifying what matters. <br/><br/><a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
-      D: `You’re <strong>The Connector</strong>. You lead through relationship, trust, and service. Your magnetism is in your heart-centered communication. <br/><br/><a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
-      E: `You’re <strong>The Trailblazer</strong>. You’re bold, brave, and meant to do things differently. Your message challenges the norm. <br/><br/><a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`
+      A: `<h2>The Visionary</h2>
+<p>You’re here to cast vision and move with intuition.</p>
+<ul>
+  <li>You lead best by sharing ideas, possibilities, and insight.</li>
+  <li>You don’t need rigid structure—you need space to flow.</li>
+  <li>Your gift is seeing what others can’t yet see.</li>
+</ul>
+<p><strong>Watch out for:</strong> Overcommitting or chasing too many ideas at once.</p>
+<p><strong>Best path:</strong> Thought leader, coach, creator, or brand strategist.</p>
+<p><strong>Quick win:</strong> Choose one project to channel your vision this quarter.</p>
+<a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
+
+      B: `<h2>The Builder</h2>
+<p>You’re steady, strategic, and strong in follow-through.</p>
+<ul>
+  <li>You lead through consistent action and grounded steps.</li>
+  <li>You thrive with clear systems and routines.</li>
+  <li>You’re the one people trust to get it done.</li>
+</ul>
+<p><strong>Watch out for:</strong> Burnout from doing too much for others.</p>
+<p><strong>Best path:</strong> Systems-based business, coaching with structure, recurring offers.</p>
+<p><strong>Quick win:</strong> Audit your calendar to protect your peak energy hours.</p>
+<a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
+
+      C: `<h2>The Refiner</h2>
+<p>You’re the wise editor, deep thinker, and quiet power behind the scenes.</p>
+<ul>
+  <li>You shine when optimizing, clarifying, or improving.</li>
+  <li>People feel calm and confident in your presence.</li>
+  <li>You don’t need to be loud to be powerful.</li>
+</ul>
+<p><strong>Watch out for:</strong> Getting stuck in perfectionism or over-analysis.</p>
+<p><strong>Best path:</strong> Course creator, mentor, strategist, behind-the-scenes support.</p>
+<p><strong>Quick win:</strong> Share a tip today instead of waiting for it to be “perfect.”</p>
+<a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
+
+      D: `<h2>The Connector</h2>
+<p>You’re the heart-centered communicator who brings people together.</p>
+<ul>
+  <li>You lead with empathy, trust, and relationship.</li>
+  <li>You thrive in collaboration, community, and client-focused work.</li>
+  <li>Your energy is magnetic when you’re in connection.</li>
+</ul>
+<p><strong>Watch out for:</strong> Losing yourself in people-pleasing.</p>
+<p><strong>Best path:</strong> Coaching, community leader, service-based biz, group programs.</p>
+<p><strong>Quick win:</strong> DM 3 people you feel called to reconnect with today.</p>
+<a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`,
+
+      E: `<h2>The Trailblazer</h2>
+<p>You’re bold, intuitive, and unafraid to challenge the status quo.</p>
+<ul>
+  <li>You lead by doing things differently and inspiring others to break free.</li>
+  <li>Your power is in your authenticity and courage.</li>
+  <li>You’re here to shake things up.</li>
+</ul>
+<p><strong>Watch out for:</strong> Burning bridges or starting over too often.</p>
+<p><strong>Best path:</strong> Personal brand, thought leadership, edgy offers, storytelling.</p>
+<p><strong>Quick win:</strong> Share something bold that you’ve been holding back.</p>
+<a href='https://kindramorse.myflodesk.com/eni9niuxj6' target='_blank'><button>I’m ready to build aligned</button></a>`
     };
 
     quizForm.addEventListener('submit', function (e) {
